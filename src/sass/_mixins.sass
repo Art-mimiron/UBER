@@ -1,0 +1,16 @@
+@mixin center
+	left: 50%
+	transform: translateX(-50%)
+
+@mixin centerv
+	top: 50%
+	transform: translateY(-50%)
+	
+=btn_color
+	&:hover
+		background-image: none
+		background-color: $main_color
+
+=btn_default
+	&:hover
+		background-image: linear-gradient(0deg, #1eacc7 0%, #4ce2ff 100%)
