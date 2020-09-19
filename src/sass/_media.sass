@@ -74,7 +74,6 @@
             width: 100%
             display: flex 
             justify-content: center
-            /** margin-bottom: 6px **/
             &:nth-child(1)
                 width: 100%
                 order: 2
@@ -100,9 +99,10 @@
         .xs-hidden
             display: none
         .xs-visible
-            display: block
+            display: flex
+            flex-direction: column
+            align-items: flex-end
         &_phone
-            display: block
             text-align: center
             margin-bottom: 6px
             margin-top: 9px
@@ -111,7 +111,8 @@
             display: block
             height: 35px
             width: 150px
-            margin: 0 auto
+            margin-left: auto
+            margin-top: 2px
             font-size: 12px 
     .menu
         position: fixed
@@ -202,11 +203,13 @@
             height: 28px
             font-size: 10px
             font-weight: 400
-            margin-bottom: 8px  
+            margin-bottom: 8px 
+            margin-right: 18px 
             +btn_default
         &_phone
             font-size: 12px
             margin-top: 1px
+            margin-right: 33px
     .promo
         height: 400px
         padding-top: 113px
