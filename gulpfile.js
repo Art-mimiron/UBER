@@ -19,7 +19,7 @@ gulp.task('styles', function(){
             .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
             .pipe(cleanCSS({compatibility: 'ie8'}))
             .pipe(rename({suffix: ".min"}))
-            .pipe(autoprefixer({cascade: false}))
+            .pipe(autoprefixer({browsers: ['last 2 version'], cascade: false}))
             .pipe(gulp.dest("src/css"))
             .pipe(browserSync.stream());
 });
